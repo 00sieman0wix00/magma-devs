@@ -2,23 +2,24 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>MagmaDevs</title>
+    <title>MagmaDevs - ChillWare</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #282c34;
-            color: #ffffff;
+            background-color: #f0f0f0;
+            color: #333333;
             margin: 0;
             padding: 0;
         }
         .header {
-            background-color: #20232a;
+            background-color: #282c34;
             padding: 20px;
             text-align: center;
         }
         .header h1 {
             margin: 0;
             font-size: 48px;
+            color: #ffffff;
         }
         .nav {
             display: flex;
@@ -38,33 +39,6 @@
         .nav a:hover {
             color: #21a1f1;
         }
-        .container {
-            text-align: center;
-            padding: 50px;
-        }
-        .button {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #ffffff;
-            background-color: #61dafb;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #21a1f1;
-        }
-        .executor-details {
-            margin: 20px 0;
-            font-size: 20px;
-        }
-        .executor-icon {
-            width: 100px;
-            height: 100px;
-        }
         .discord-button {
             position: absolute;
             top: 20px;
@@ -81,26 +55,60 @@
         .discord-button:hover {
             background-color: #003d82;
         }
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+        .executor {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        .executor h2 {
+            margin-top: 0;
+        }
+        .executor img {
+            width: 100px;
+            height: 100px;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #ff4d4d;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff1a1a;
+        }
     </style>
 </head>
 <body>
-    <a class="discord-button" href="https://discord.gg/BU4eSgmd" target="_blank">Discord</a>
     <div class="nav">
         <a href="#">Home</a>
         <a href="#">Executors</a>
         <a href="#">Scripts</a>
         <a href="#">Contact</a>
+        <a class="discord-button" href="https://discord.gg/BU4eSgmd" target="_blank">Discord</a>
     </div>
     <div class="header">
         <h1>MagmaDevs</h1>
     </div>
-    <div class="container">
-        <div class="executor-details">
+    <div class="content">
+        <div class="executor">
             <h2>ChillWare Executor</h2>
             <img src="/images/chillware.png" alt="ChillWare Icon" class="executor-icon">
-            <p>A new Executor Roblox with 0% Virus (check VirusTotal for proof)</p>
+            <p>A new Executor Roblox with 0% Virus (check VirusTotal for proof).</p>
+            <a class="button" href="link-to-executor.zip" download>Download</a>
         </div>
-        <a class="button" href="link-to-executor.zip" download>Download Executor</a>
     </div>
 </body>
 </html>
