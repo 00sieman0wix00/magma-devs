@@ -1,121 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>MagmaDevs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGMADEVS</title>
     <style>
         body {
+            background-color: #282c34;
+            color: white;
             font-family: Arial, sans-serif;
-            background-color: #007bff;
-            color: #ffffff;
             margin: 0;
             padding: 0;
         }
         .header {
-            background-color: #20232a;
-            padding: 20px;
-            text-align: center;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 48px;
-        }
-        .nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            background-color: #20232a;
-            position: sticky;
-            top: 0;
-        }
-        .nav a {
-            color: #61dafb;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 18px;
-        }
-        .nav a:hover {
-            color: #21a1f1;
-        }
-        .discord-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
             padding: 10px 20px;
-            font-size: 18px;
-            color: #ffffff;
-            background-color: #0056b3;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
         }
-        .discord-button:hover {
-            background-color: #003d82;
+        .header h1 {
+            margin: 0;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
         }
         .content {
-            padding: 50px;
-            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
         }
         .executor {
-            background-color: #ffffff;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            color: #333333;
             display: flex;
             align-items: center;
-            justify-content: left;
+            gap: 20px;
         }
         .executor img {
             width: 100px;
             height: 100px;
-            margin-right: 20px;
         }
         .executor-details {
             text-align: left;
         }
         .executor-details h2 {
-            margin-top: 0;
+            margin: 0;
         }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #ffffff;
+        .executor-details p {
+            margin: 0;
+        }
+        .button-download {
             background-color: #ff4d4d;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #ff1a1a;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Executors</a>
-        <a href="#">Scripts</a>
-        <a href="#">Contact</a>
-        <a class="discord-button" href="https://discord.gg/BU4eSgmd" target="_blank">Discord</a>
-    </div>
     <div class="header">
-        <h1>MagmaDevs</h1>
+        <h1><strong>MAGMADEVS</strong></h1>
+        <div class="buttons">
+            <button class="button" onclick="window.location.href='https://discord.gg/BU4eSgmd';">DISCORD</button>
+        </div>
     </div>
     <div class="content">
         <div class="executor">
-            <img src="/images/chillware.png" alt="ChillWare Icon" class="executor-icon">
+            <img src="/images/chillware.png" alt="ChillWare Icon">
             <div class="executor-details">
                 <h2>ChillWare Executor</h2>
-                <p>A new Executor Roblox with 0% Virus (check VirusTotal for proof).</p>
-                <a class="button" href="link-to-executor.zip" download>Download Executor</a>
+                <p>A new Roblox executor</p>
+                <button class="button button-download" onclick="window.location.href='link-to-executor.zip';">Download</button>
             </div>
         </div>
     </div>
