@@ -56,7 +56,7 @@
         }
         .content {
             padding: 50px;
-            text-align: center;
+            text-align: left;
         }
         .executor {
             background-color: #ffffff;
@@ -66,6 +66,8 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             color: #333333;
+            display: flex;
+            align-items: center;
         }
         .executor h2 {
             margin-top: 0;
@@ -73,10 +75,11 @@
         .executor img {
             width: 100px;
             height: 100px;
+            margin-right: 20px;
         }
         .button {
             display: inline-block;
-            margin: 10px;
+            margin-left: 20px;
             padding: 15px 30px;
             font-size: 18px;
             color: #ffffff;
@@ -104,10 +107,12 @@
     </div>
     <div class="content">
         <div class="executor">
-            <h2>ChillWare Executor</h2>
             <img src="/images/chillware.png" alt="ChillWare Icon" class="executor-icon">
-            <p>A new Executor Roblox with 0% Virus (check VirusTotal for proof).</p>
-            <a class="button" href="link-to-executor.zip" download>Download</a>
+            <div>
+                <h2>ChillWare Executor</h2>
+                <p>A new Executor Roblox with 0% Virus (check VirusTotal for proof).</p>
+                <a class="button" href="link-to-executor.zip" download>Download Executor</a>
+            </div>
         </div>
     </div>
 </body>
