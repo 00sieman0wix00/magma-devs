@@ -6,32 +6,56 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #007bff;
+            background-color: #282c34;
             color: #ffffff;
             margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #20232a;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #20232a;
+            position: sticky;
+            top: 0;
+        }
+        .nav a {
+            color: #61dafb;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            color: #21a1f1;
         }
         .container {
             text-align: center;
             padding: 50px;
         }
-        h1 {
-            font-size: 48px;
-            margin-top: 50px;
-        }
         .button {
             display: inline-block;
             margin: 10px;
-            padding: 10px 20px;
+            padding: 15px 30px;
             font-size: 18px;
             color: #ffffff;
-            background-color: #0056b3;
+            background-color: #61dafb;
             border: none;
             border-radius: 5px;
             text-decoration: none;
             cursor: pointer;
         }
         .button:hover {
-            background-color: #003d82;
+            background-color: #21a1f1;
         }
         .executor-details {
             margin: 20px 0;
@@ -61,11 +85,19 @@
 </head>
 <body>
     <a class="discord-button" href="https://discord.gg/BU4eSgmd" target="_blank">Discord</a>
-    <div class="container">
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Executors</a>
+        <a href="#">Scripts</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="header">
         <h1>MagmaDevs</h1>
+    </div>
+    <div class="container">
         <div class="executor-details">
-            <h2>*NEW* ChillWare Executor</h2>
-            <img src="images/chillware.png" alt="ChillWare Icon" class="executor-icon">
+            <h2>ChillWare Executor</h2>
+            <img src="/images/chillware.png" alt="ChillWare Icon" class="executor-icon">
             <p>A new Executor Roblox with 0% Virus (check VirusTotal for proof)</p>
         </div>
         <a class="button" href="link-to-executor.zip" download>Download Executor</a>
